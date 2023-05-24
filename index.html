@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js+"></script>
+    <div class="main-container">
+      <div class="e-cap-con">
+        <h1 style="text-align: center">Event Capture</h1>
+        <div id="cap-grandparent" class="grandparent">
+          Grand Parent
+          <div id="cap-parent" class="parent">
+            Parent
+            <div id="cap-child" class="child">Child</div>
+          </div>
+        </div>
+      </div>
+      <div class="e-bub-con">
+        <h1 style="text-align: center">Event Bubbling</h1>
+        <div id="bub-grandparent" class="grandparent">
+          Grand Parent
+          <div id="bub-parent" class="parent">
+            Parent
+            <div id="bub-child" class="child">Child</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="output">
+      <span class="output-header">Output</span>
+      <button id="output-button">Clear Output</button>
+      <p id="output-text"></p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
